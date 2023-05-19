@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background: black
+}
+.grid-container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nav Hero Hero Hero"
+    "Nav BOX-1 Box-2 Box-3"
+    "Nav Footer Footer Footer";
+  height: 100vh;
+  background: #333;
+  color: whitesmoke;
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.Nav { grid-area: Nav;
+background: teal;
+border-radius: 12px; }
+
+.Box-1 { grid-area: BOX-1;
+background: royalblue;
+border-radius: 12px; }
+
+.Box-2 { grid-area: Box-2;
+  background: rebeccapurple;
+  border-radius: 12px; }
+
+.Box-3 { grid-area: Box-3;
+  background: violet;
+  border-radius: 12px; }
+
+.Footer { grid-area: Footer;
+background: silver;
+border-radius: 12px; }
+
+.Hero { grid-area: Hero;
+background: grey;
+border-radius: 12px; }
